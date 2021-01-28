@@ -1,0 +1,43 @@
+= Thinking of a five digit number
+
+I'm thinking of a five digit number. 
+
+    * If you add 11111 to it, it will be divisible by 3
+    * If you subtract 11111 from it, it will be divisible by 4
+    * If you exchange any two adjacent digits, it will decrease
+
+== Divisible by four
+
+A number divisible by four always has its last two digits divisible by four.
+However, the last two digits must be "in order" so that if we swap them the 5-digit number
+is lower. So, for example, 24 would not be suitable for the last two digits but 20 would.
+
+20, 32, 40, 52
+
+Nothing after 52 is suitable because for 64 the other 3 digits have to 876. This is because
+to get the number in the answer, we have to add 11111 to our number which is divisible by 4.
+
+For 64 or higher, we cannot find 3 more digits as they have to increase right to left with 
+the most significant digit being 8. (so the most significant digit is 9 in the result).
+
+== Divisible by 3
+
+For a number to be divisible by 3, the sum of its digits has to be divisible by 3.
+
+It must end in:
+
+42, 54, 62, 74
+
+54 is divisible by 3. 987 is divisible by 3.
+
+    987 - yes
+    986 - no
+    976 - no
+
+62 is NOT divisible by 3. Need 1 more to make it divisible by 3.
+
+987 - no
+There are no other possibilities in this case.
+
+
+
